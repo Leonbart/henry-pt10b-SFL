@@ -1,11 +1,12 @@
 .app {
    text-align: center;
    background: url('./assets/landscape.svg') center center/cover;
-   background-attachment: fixed, scroll;
+   /* background-attachment: fixed, scroll; */
 }
 
 .cards {
    background: url('./assets/landscape.svg') center center/cover;
+   background-attachment: fixed, scroll;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
