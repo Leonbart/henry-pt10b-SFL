@@ -1,0 +1,11 @@
+.app {
+   text-align: center;
+   background-attachment: fixed, scroll;
+}
+
+.cards {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background: url('./assets/landscape.svg') center center/cover;
+}
