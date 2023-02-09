@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,10 +7,8 @@
 }
 
 body {
-  
-  font-family: 'Comfortaa', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Comfortaa", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,7 +31,7 @@ h1 {
 }
 
 .app:before {
-  content: '';
+  content: "";
   /* background: url('./assets/landscape.svg') no-repeat center center/cover ; */
   position: absolute;
   width: 100%;
@@ -50,7 +48,7 @@ h1 {
 }
 
 .app input {
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -78,12 +76,11 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   background-color: rgba(0, 0, 0, 0.3);
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 25px;
-  
 }
 
 .app .top {
@@ -94,14 +91,11 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   text-transform: uppercase;
-
 }
-
 
 .app .description {
   position: relative;
   font-size: 10rem;
- 
 }
 
 .app .bottom {
@@ -118,4 +112,14 @@ h1 {
 
 .bold {
   font-weight: bolder;
+}
+
+.closeButton {
+  display: inline;
+  padding-left: 0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: red;
+  cursor: default;
 }
