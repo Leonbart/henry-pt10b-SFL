@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./components/card";
 import "./App.css";
@@ -8,6 +8,25 @@ function App() {
   const [location, setLocation] = useState("");
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&lang=es&appid=9ce514d104aef1f86b8886d0b2a8f026`;
+  const urlIP = `https://ipapi.co/city/`;
+
+  useEffect(() => {
+    const city = axios.get(urlIP).then((response) => {
+      axios
+        .get(
+          `https://api.openweathermap.org/data/2.5/weather?q=${response.data}&units=metric&lang=es&appid=9ce514d104aef1f86b8886d0b2a8f026`
+        )
+        .then((response) => {
+          setData([response.data]);
+        });
+    });
+  }, []);
+
+  async function consulta() {
+    axios.get(url).then((response) => {
+      setData([response.data]);
+    });
+  }
 
   const searchLocation = (e) => {
     if (e.key === "Enter") {
